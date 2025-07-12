@@ -162,6 +162,7 @@ textarea {
 @media (min-width: 1024px) {
   .contact__information {
     flex-direction: row;
+    align-items: stretch;
     gap: 60px;
   }
 
