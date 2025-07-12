@@ -1,7 +1,7 @@
 .about {
   padding: 0 1rem;
   margin-bottom: 1rem;
-  margin-top: 1.3rem;
+  margin-top: 5rem;
 }
 
 .about__title {
@@ -187,6 +187,10 @@
 
 /* lg */
 @media (min-width: 1024px) {
+  .about {
+    margin-top: 8rem;
+  }
+
   .about-container {
     margin-top: 4rem;
     display: flex;
@@ -241,6 +245,10 @@
 
 /* xl */
 @media (min-width: 1280px) {
+  .about {
+    margin-top: 10rem;
+  }
+
   .about-container {
     margin-top: -1rem;
   }

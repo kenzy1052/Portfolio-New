@@ -296,10 +296,6 @@ html {
     gap: 0.8rem;
   }
 
-  .header__profile-image {
-    width: 50px;
-  }
-
   .header__profile-name {
     font-size: var(--base);
   }
@@ -318,10 +314,6 @@ html {
 
   .header__profile-container {
     gap: 0.8rem;
-  }
-
-  .header__profile-image {
-    width: 60px;
   }
 
   .header__profile-name {
@@ -378,10 +370,6 @@ html {
     gap: 0.8rem;
   }
 
-  .header__profile-image {
-    width: 40px;
-  }
-
   .header__profile-name {
     font-size: var(--xs);
   }
@@ -423,10 +411,6 @@ html {
 
 /* 2xl */
 @media (min-width: 1536px) {
-  .header__profile-image {
-    width: 60px;
-  }
-
   .header__profile-name {
     font-size: var(--base);
   }
