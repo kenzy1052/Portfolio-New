@@ -1,8 +1,17 @@
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
 
+// Updated function names and ID
+function showDialog() {
+  document.getElementById("successDialog").classList.add("show");
+}
+
+function closeDialog() {
+  document.getElementById("successDialog").classList.remove("show");
+}
+
 form.addEventListener("submit", async (e) => {
-  e.preventDefault(); // prevent default page reload
+  e.preventDefault();
   const formData = new FormData(form);
 
   try {
@@ -16,23 +25,22 @@ form.addEventListener("submit", async (e) => {
 
     if (response.ok) {
       form.reset();
-      status.style.display = "block";
-      status.style.color = "green";
-      status.textContent = "🎉 Message sent successfully!";
-      setTimeout(() => {
-        status.style.display = "none";
-      }, 2000);
+      showDialog(); // Call the updated function
     } else {
       const data = await response.json();
-      status.style.display = "block";
-      status.style.color = "red";
-      status.textContent = data.errors
-        ? data.errors[0].message
-        : "Oops! Something went wrong.";
+      if (status) {
+        status.style.display = "block";
+        status.style.color = "red";
+        status.textContent = data.errors
+          ? data.errors[0].message
+          : "Oops! Something went wrong.";
+      }
     }
   } catch (error) {
-    status.style.display = "block";
-    status.style.color = "red";
-    status.textContent = "Failed to send. Please try again later.";
+    if (status) {
+      status.style.display = "block";
+      status.style.color = "red";
+      status.textContent = "Failed to send. Please try again later.";
+    }
   }
 });

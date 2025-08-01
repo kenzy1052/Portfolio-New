@@ -196,3 +196,113 @@ textarea {
     padding: 6rem;
   }
 }
+
+.success-dialog {
+  background: var(--bglight, white); /* Uses your variable with a fallback */
+  color: var(--textcolor, #333); /* Uses your variable with a fallback */
+  border-radius: 14px; /* Matches your contact card style */
+  box-shadow: var(--box);
+  padding: 2rem;
+  text-align: center;
+
+  /* Sizing */
+  width: 90%;
+  max-width: 450px; /* A good maximum width */
+  max-height: 90vh; /* Prevents it from being too tall */
+
+  /* Centering */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  display: none; /* Hidden by default */
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.success-dialog.show {
+  display: block;
+}
+
+/* Checkmark and other elements remain the same, just with the new parent class */
+.success-dialog .checkmark {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.success-dialog .checkmark circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke: #4caf50;
+  fill: none;
+  animation: stroke 0.6s forwards;
+}
+
+.success-dialog .checkmark path {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke-width: 2;
+  stroke: #4caf50;
+  fill: none;
+  animation: stroke 0.4s 0.6s forwards;
+}
+
+.success-dialog h2 {
+  margin: 10px 0;
+  font-size: var(--xl);
+}
+
+.success-dialog p {
+  color: var(--textcolor2);
+  font-size: var(--base);
+}
+
+.success-dialog button {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.success-dialog button:hover {
+  background: #45a049;
+}
+
+/* Keyframe animations do not need to be changed */
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* For tablets and larger */
+@media (min-width: 768px) {
+  .success-dialog {
+    max-width: 500px;
+  }
+}
+
+/* For desktops and larger */
+@media (min-width: 1024px) {
+  .success-dialog {
+    max-width: 550px;
+  }
+}

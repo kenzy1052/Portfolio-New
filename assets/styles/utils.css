@@ -58,7 +58,7 @@
   background: var(--gradient);
 }
 
-.links {
+.button:v .links {
   text-decoration: none;
 }
 

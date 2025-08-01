@@ -119,6 +119,26 @@
   vertical-align: bottom;
 }
 
+.link {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: var(--complementary);
+  color: var(--rose);
+  font-size: var(--sm);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  background-color: var(--rose);
+  color: var(--complementary);
+}
+.link:active {
+  color: var(--textcolor);
+}
+
 @keyframes blink {
   0%,
   100% {

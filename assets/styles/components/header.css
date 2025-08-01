@@ -125,11 +125,8 @@ html {
 }
 
 .header__profile-image {
-  width: 40px;
-  border-radius: 50%;
+  width: 80px;
   cursor: pointer;
-  border: 2px solid #3c3a3c;
-  box-shadow: 3px 3px 5px rgba(33, 31, 31, 0.7);
 }
 
 .header__profile-name {
@@ -137,6 +134,11 @@ html {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--textcolor2);
+}
+
+.prof {
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
 .mobile-nav {
