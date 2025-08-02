@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/styles/components/pricing.css" />
     <link rel="stylesheet" href="./assets/styles/components/contact.css" />
     <link rel="stylesheet" href="./assets/styles/components/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/components/alert.css" />
   </head>
   <body>
     <header>
@@ -281,7 +282,7 @@
             </div>
             <div class="handle1">
               <a
-                href="https://www.linkedin.com/in/kenzy-mawutor-601b7228a "
+                href="https://www.linkedin.com/in/kenzy-mawutor-127268376"
                 class="links"
                 target="_blank"
               >
@@ -300,6 +301,11 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="alert" class="custom-alert">
+      <span>⚠️ This portfolio is still in development.</span>
+      <button class="close-btn" onclick="closeAlert()">×</button>
     </div>
 
     <div class="overlay" id="overlay"></div>
@@ -352,7 +358,7 @@
                   </div>
                   <div class="handle">
                     <a
-                      href="https://www.linkedin.com/in/kenzy-mawutor-601b7228a "
+                      href="https://www.linkedin.com/in/kenzy-mawutor-127268376"
                       class="links"
                       target="_blank"
                     >
@@ -826,7 +832,7 @@
 
                 <div class="cta-buttons">
                   <button class="likebtn btn">
-                    Like
+                    Download
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -901,7 +907,7 @@
                             Bishop Herman College (2018 - 2021)
                           </p>
                         </div>
-                        <p class="info-details">Agg. 19</p>
+                        <p class="info-details">Agg. 12</p>
                       </div>
                       <div class="info-line"></div>
                     </div>
@@ -927,7 +933,6 @@
                             Started from (2024 - present)
                           </p>
                         </div>
-                        <p class="info-details">3/5</p>
                       </div>
                       <div class="info-line"></div>
                       <p class="info-description">
@@ -1043,7 +1048,6 @@
                       <p class="info-title">Designing Personal Projects</p>
                       <p class="info-subtitle">Started from (2024 - present)</p>
                     </div>
-                    <p class="info-details">3/5</p>
                   </div>
                   <div class="info-line"></div>
                   <p class="info-description">
@@ -1125,7 +1129,7 @@
                             ></path>
                           </g>
                         </svg>
-                        Page with Elementor
+                        Responsive Web Design
                       </li>
                       <li>
                         <svg
@@ -1156,7 +1160,7 @@
                             ></path>
                           </g>
                         </svg>
-                        Design Customization
+                        Portfolio Design
                       </li>
                       <li>
                         <svg
@@ -1187,7 +1191,7 @@
                             ></path>
                           </g>
                         </svg>
-                        Responsive Design
+                        Clean Code
                       </li>
                       <li>
                         <svg
@@ -1218,228 +1222,7 @@
                             ></path>
                           </g>
                         </svg>
-                        Content Upload
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Design Customization
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        2 Plugins/Extensions
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="list-left">
-                    <ul class="list-items">
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Multipage Elementor
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Design Figma
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Maintainable Design
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Immersive GUI
-                      </li>
-                      <li>
-                        <svg
-                          class="check"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></g>
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            ></path>
-                            <path
-                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-                              stroke="#d3e5d3"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                            ></path>
-                          </g>
-                        </svg>
-                        Design With photoshop
+                        Basic Interactive Features
                       </li>
                       <li>
                         <svg
@@ -1474,12 +1257,171 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="list-left">
+                    <ul class="list-items">
+                      <li>
+                        <svg
+                          class="check"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </g>
+                        </svg>
+                        Content Management Support
+                      </li>
+                      <li>
+                        <svg
+                          class="check"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </g>
+                        </svg>
+                        Design Customization
+                      </li>
+                      <li>
+                        <svg
+                          class="check"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </g>
+                        </svg>
+                        Plugin Integration
+                      </li>
+                      <li>
+                        <svg
+                          class="check"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </g>
+                        </svg>
+                        Layout Planning
+                      </li>
+                      <li>
+                        <svg
+                          class="check"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                              stroke="#d3e5d3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </g>
+                        </svg>
+                        Design With photoshop
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="button">
-              <button class="btn submit-btn">
+              <button class="btn submit-btn" id="orderNowBtn">
                 Order Now
                 <svg
                   class="arrow-right"
@@ -1612,7 +1554,7 @@
                   </div>
                   <div class="handle">
                     <a
-                      href="https://www.linkedin.com/in/kenzy-mawutor-601b7228a "
+                      href="https://www.linkedin.com/in/kenzy-mawutor-127268376"
                       class="links"
                       target="_blank"
                     >
@@ -1712,14 +1654,20 @@
     <footer>
       <div class="footer">
         <div class="footer__profile">
+          <!-- <p class="footer__profile-name">INBIO</p> -->
+        </div>
+        <div class="love-img">
+          <p class="love">Made with ❤️ by</p>
           <img
             src="./assets/images/kenzy.png"
             alt="Profile"
             class="header__profile-image"
+            style="width: 50px"
           />
-          <p class="footer__profile-name">INBIO</p>
         </div>
-        <p class="footer__rights">&copy; Kenzy 2025. All right reserved!</p>
+        <p class="footer__rights">
+          &copy; KENZYVERSE 2025. All right reserved!
+        </p>
       </div>
     </footer>
 
@@ -1729,5 +1677,7 @@
     <script src="./assets/src/portfolio.js"></script>
     <script src="./assets/src/resume.js"></script>
     <script src="./assets/src/contact.js"></script>
+    <script src="./assets/src/alert.js"></script>
+    <script src="./assets/src/pricing.js"></script>
   </body>
 </html>

@@ -1,0 +1,64 @@
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--complementary);
+  color: var(--bgcolor);
+  padding: 1rem 1.5rem;
+  border-left: 5px solid var(--rose);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 260px;
+  max-width: 90vw;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 1;
+}
+
+.custom-alert.hide {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.custom-alert button.close-btn {
+  background: none;
+  border: none;
+  color: var(--bgcolor);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .custom-alert button.close-btn:hover {
+    color: var(--rose);
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-alert {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .custom-alert button.close-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .custom-alert {
+    font-size: 1.1rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .custom-alert button.close-btn {
+    font-size: 1.4rem;
+  }
+}

@@ -103,9 +103,11 @@
   height: 30px;
 }
 
-.handle:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--box-hover);
+@media (hover: hover) and (pointer: fine) {
+  .handle:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-hover);
+  }
 }
 
 .typing::after {
@@ -131,10 +133,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.link:hover {
-  background-color: var(--rose);
-  color: var(--complementary);
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    background-color: var(--rose);
+    color: var(--complementary);
+  }
 }
+
 .link:active {
   color: var(--textcolor);
 }

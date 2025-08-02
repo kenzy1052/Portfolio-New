@@ -3,236 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Old Portfolio</title>
+    <title>Page Unavailable</title>
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
       body {
+        height: 100%;
+        background: var(--bgcolor);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .container {
         text-align: center;
-        /* font-size: var(--8xl); */
-        font-weight: bolder;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+        animation: fadeIn 0.8s ease-in-out;
+        max-width: 600px;
       }
 
-      .sorry {
-        color: #0006ef;
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: var(--rose);
+        margin-bottom: 1rem;
       }
 
-      .one {
-        background-color: red;
-        width: 5px;
-        height: 100px;
-        opacity: 0.2;
-        margin-left: 20px;
+      p {
+        font-size: 1.2rem;
+        color: var(--textcolor);
+        margin-bottom: 2.5rem;
       }
 
-      .glow {
+      .btn {
         position: relative;
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        background-color: var(--bgcolor);
-      }
-
-      .glow::before {
-        position: absolute;
-        content: "";
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        display: flex;
-        align-items: center;
-        background: conic-gradient(
-          from 0deg at 50% 50%,
-          red 0%,
-          red 20%,
-          transparent 35%,
-          transparent 45%,
-          blue 50%,
-          blue 70%,
-          transparent 85%,
-          transparent 95%,
-          red 100%
+        display: inline-block;
+        padding: 0.9rem 2.2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--bgcolor);
+        background: linear-gradient(
+          120deg,
+          var(--rose),
+          var(--blue),
+          var(--rose)
         );
-        animation: glow 10s linear infinite;
-        z-index: 0;
-        border-radius: inherit;
+        background-size: 300% 300%;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 1;
+        transition: color 0.4s ease;
+        animation: gradientFlow 6s ease infinite;
       }
 
-      .glow::before {
-        background: red; /* fallback solid color */
+      .btn::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%) scale(0);
+        width: 300%;
+        height: 300%;
+        background: var(--complementary);
+        border-radius: 50%;
+        z-index: -1;
+        transition: transform 1s ease;
+        transform-origin: bottom right;
       }
 
-      @supports (background: conic-gradient(red, blue)) {
-        .glow::before {
-          background: conic-gradient(
-            from 0deg at 50% 50%,
-            red 0%,
-            red 20%,
-            transparent 35%,
-            transparent 45%,
-            blue 50%,
-            blue 70%,
-            transparent 85%,
-            transparent 95%,
-            red 100%
-          );
+      .btn:hover::before {
+        transform: translate(50%, 50%) scale(1);
+      }
+
+      .btn:hover {
+        color: var(--bgcolor);
+      }
+
+      @keyframes gradientFlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
         }
       }
 
-      .glow::after {
-        position: absolute;
-        content: "";
-        background-color: var(--bgcolor);
-        inset: 2px;
-        border-radius: inherit;
-        z-index: 1;
-      }
-
-      .content {
-        padding: 5px;
-        z-index: 2;
-        font-size: var(--sm);
-      }
-
-      a {
-        display: inline-block;
-        margin-top: 40px;
-        background-color: #0006ef;
-        width: auto;
-        padding: 2px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-        color: white;
-        font-size: var(--xs);
-        cursor: pointer;
-      }
-
-      @keyframes glow {
+      @keyframes fadeIn {
         from {
-          transform: rotate(0deg);
+          opacity: 0;
+          transform: translateY(20px);
         }
         to {
-          transform: rotate(360deg);
+          opacity: 1;
+          transform: translateY(0);
         }
       }
 
-      /* xs */
-      @media (min-width: 475px) {
-        .content {
-          font-size: var(--base);
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2.2rem;
         }
-        .glow {
-          position: relative;
-          width: 300px;
-          height: 200px;
+        p {
+          font-size: 1rem;
         }
-      }
-
-      /* sm */
-      @media (min-width: 640px) {
-        .content {
-          font-size: var(--lg);
-        }
-        .glow {
-          position: relative;
-          width: 400px;
-          height: 300px;
-        }
-
-        .glow::before {
-          width: 200%;
-          height: 200%;
-        }
-      }
-
-      /* md */
-      @media (min-width: 768px) {
-        .content {
-          font-size: var(--xl);
-        }
-        .glow {
-          position: relative;
-          width: 500px;
-          height: 400px;
-        }
-
-        .glow::before {
-          width: 200%;
-          height: 200%;
-        }
-      }
-
-      /* lg */
-      @media (min-width: 1024px) {
-        .content {
-          font-size: var(--2xl);
-        }
-        .glow {
-          position: relative;
-          width: 600px;
-          height: 500px;
-        }
-
-        .glow::before {
-          width: 200%;
-          height: 200%;
-        }
-      }
-
-      /* xl */
-      @media (min-width: 1280px) {
-        .content {
-          font-size: var(--3xl);
-        }
-        .glow {
-          position: relative;
-          width: 700px;
-          height: 600px;
-        }
-
-        .glow::before {
-          width: 200%;
-          height: 200%;
-        }
-      }
-
-      /* 2xl */
-      @media (min-width: 1536px) {
-        .content {
-          font-size: var(--4xl);
-        }
-        .glow {
-          position: relative;
-          width: 800px;
-          height: 700px;
-        }
-
-        .glow::before {
-          width: 200%;
-          height: 200%;
+        .btn {
+          font-size: 1rem;
+          padding: 0.8rem 1.8rem;
         }
       }
     </style>
   </head>
   <body>
-    <div class="glow">
-      <div class="content">
-        <p class="sorry">Sorry, This page is down for maintenance.</p>
-        <p class="back">We will be back up soon!</p>
-
-        <a href="/index.html#portfolio">Go back</a>
-      </div>
+    <div class="container">
+      <h1>Page Unavailable</h1>
+      <p>Sorry, this page is currently unavailable. Please check back later.</p>
+      <a href="/index.html"><button class="btn">Go Back</button></a>
     </div>
   </body>
 </html>

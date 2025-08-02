@@ -46,9 +46,11 @@
   transition: box-shadow 0.3s, background 0.3s;
 }
 
-.portfolio__item:hover {
-  box-shadow: var(--box-hover);
-  background: var(--gradient);
+@media (hover: hover) and (pointer: fine) {
+  .portfolio__item:hover {
+    box-shadow: var(--box-hover);
+    background: var(--gradient);
+  }
 }
 
 .portfolio__item-image {
@@ -94,10 +96,6 @@
   stroke: var(--textcolor);
 }
 
-.heart-icon:hover path {
-  stroke: var(--rose);
-}
-
 .number-hearts {
   font-size: var(--xs);
 }
@@ -127,12 +125,16 @@
   transform: translate(-10%, 30%);
 }
 
-.portfolio__description:hover {
-  color: var(--rose);
+@media (hover: hover) and (pointer: fine) {
+  .portfolio__description:hover {
+    color: var(--rose);
+  }
 }
 
-.portfolio__description:hover .arrow-up path {
-  stroke: var(--rose);
+@media (hover: hover) and (pointer: fine) {
+  .portfolio__description:hover .arrow-up path {
+    stroke: var(--rose);
+  }
 }
 
 .modal {
@@ -233,9 +235,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-.likebtn:hover,
-.viewbtn:hover {
-  transform: translateY(-2px);
+@media (hover: hover) and (pointer: fine) {
+  .likebtn:hover,
+  .viewbtn:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .likebtn:active,

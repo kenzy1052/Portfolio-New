@@ -75,13 +75,17 @@
   font-size: var(--base);
 }
 
-.component__link-container:hover .component {
-  transform: translateY(-5px);
+@media (hover: hover) and (pointer: fine) {
+  .component__link-container:hover .component {
+    transform: translateY(-5px);
+  }
 }
 
-.component__link-container:hover {
-  box-shadow: var(--box-hover);
-  background: var(--gradient);
+@media (hover: hover) and (pointer: fine) {
+  .component__link-container:hover {
+    box-shadow: var(--box-hover);
+    background: var(--gradient);
+  }
 }
 
 /* xs */
@@ -138,8 +142,10 @@
     height: 35px;
   }
 
-  .component__link-container:hover .component {
-    transform: translateY(-10px);
+  @media (hover: hover) and (pointer: fine) {
+    .component__link-container:hover .component {
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -175,8 +181,10 @@
     padding: 2rem;
   }
 
-  .component__link-container:hover .component {
-    transform: translateY(-20px);
+  @media (hover: hover) and (pointer: fine) {
+    .component__link-container:hover .component {
+      transform: translateY(-20px);
+    }
   }
 }
 

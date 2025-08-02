@@ -271,8 +271,10 @@ textarea {
   margin-top: 15px;
 }
 
-.success-dialog button:hover {
-  background: #45a049;
+@media (hover: hover) and (pointer: fine) {
+  .success-dialog button:hover {
+    background: #45a049;
+  }
 }
 
 /* Keyframe animations do not need to be changed */

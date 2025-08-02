@@ -38,10 +38,12 @@
   cursor: pointer;
   font-size: var(--base);
 }
-.tab:hover {
-  color: var(--rose);
-  box-shadow: var(--box-hover);
-  background: var(--gradient);
+@media (hover: hover) and (pointer: fine) {
+  .tab:hover {
+    color: var(--rose);
+    box-shadow: var(--box-hover);
+    background: var(--gradient);
+  }
 }
 
 .education-tab,
@@ -133,9 +135,11 @@
   transition: box-shadow 0.3s, background 0.3s;
 }
 
-.info:hover {
-  box-shadow: var(--box-hover);
-  background: var(--gradient);
+@media (hover: hover) and (pointer: fine) {
+  .info:hover {
+    box-shadow: var(--box-hover);
+    background: var(--gradient);
+  }
 }
 
 .info-details {
