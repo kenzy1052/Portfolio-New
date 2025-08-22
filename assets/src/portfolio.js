@@ -22,7 +22,7 @@ cards.forEach((card) => {
   <a>`;
 
     if (title === "First Portfolio") {
-      modalButton.innerHTML = `<a href="./Portfolio/index.html" target="_blank">
+      modalButton.innerHTML = `<a href="https://kenzy1052.github.io/OldPortfolio/" target="_blank">
     <button class="viewbtn btn">
       View
       <svg
